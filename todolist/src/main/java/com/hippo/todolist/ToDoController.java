@@ -23,8 +23,8 @@ public class ToDoController {
     }
 
     @PostMapping(value = "/deleteItem")
-    public int deleteItem(@RequestParam String task) {
-        return toDoList.deleteItem(task);
+    public String deleteItem(@RequestParam String task) {
+        return toDoList.deleteItem(task.toString());
     }
 
 
