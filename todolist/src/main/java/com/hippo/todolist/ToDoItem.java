@@ -1,5 +1,8 @@
 package com.hippo.todolist;
 
+import lombok.Data;
+
+@Data
 public class ToDoItem {
 
     private String task;

@@ -12,6 +12,11 @@ public class ToDoController {
     @Autowired
     private ToDoList toDoList;
 
+    @GetMapping
+    public Healthcheck healthcheck() {
+        return new Healthcheck("ok");
+    }
+
     @GetMapping(value = "/getAllItems")
     public ArrayList<ToDoItem> getAllItems() {
         return toDoList.getAllItems();
