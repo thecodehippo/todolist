@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 @RestController
-@RequestMapping(path = "/todo")
+//@RequestMapping(path = "/todo")
 public class ToDoController {
 
     @Autowired
